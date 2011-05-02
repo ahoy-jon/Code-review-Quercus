@@ -68,7 +68,8 @@ function wfGetAgent() {
  */
 function wfGetIP() {
 	global $wgIP, $wgUsePrivateIPs, $wgCommandLineMode;
-
+  
+  return "127.0.0.1";
 	# Return cached result
 	if ( !empty( $wgIP ) ) {
 		return $wgIP;
